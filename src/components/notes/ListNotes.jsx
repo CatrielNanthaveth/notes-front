@@ -93,7 +93,7 @@ export const ListNotes = ({ notes }) => {
                     <option value=''>Select category</option>
                     {categories.map(option => {
                         return (
-                            <option value={option}>{option}</option>
+                            <option key={option} value={option}>{option}</option>
                     )
                     })}
                 </select>
